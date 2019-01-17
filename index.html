@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Triangle Tracker</title>
+</head>
+<body>
+
+<div class="container">
+  
+    <h1 class="header">Character Quiz</h1>
+
+
+  <h2 class="intro">Welcome to this amazing Character Quiz!</h2>
+  <p  class="intro">Here you can see which character fits you the most.</p>
+
+  <div id="quiz">
+    <form id="char-quiz">
+      <div class="question1">
+        Do you prefer male or female?
+        <div class="radio">
+          <label>
+          <input type="radio" name="gender" value="male" checked>
+          Male
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+          <input type="radio" name="gender" value="female" checked>
+          Female
+          </label>
+        </div>
+      </div>
+
+      <div class="question2">
+        Do you like to start a fight?
+        <div class="radio">
+          <label>
+          <input type="radio" name="fight" value="yes2" checked>
+          Yes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+          <input type="radio" name="fight" value="no2" checked>
+          No
+          </label>
+        </div>
+      </div>
+
+      <div class="question3">
+        Do you like 90's music?
+        <div class="radio">
+          <label>
+          <input type="radio" name="music" value="yes3" checked>
+          Yes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+          <input type="radio" name="music" value="no3" checked>
+          No
+          </label>
+        </div>
+      </div>
+
+      <div class="question4">
+        Do you speak more than 3 words?
+        <div class="radio">
+          <label>
+          <input type="radio" name="speak" value="yes4" checked>
+          Yes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+          <input type="radio" name="speak" value="no4" checked>
+          No
+          </label>
+        </div>
+      </div>
+
+      <div class="question5">
+        Do you like machine gun?
+        <div class="radio">
+          <label>
+          <input type="radio" name="machinegun" value="yes5" checked>
+          Yes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+          <input type="radio" name="machinegun" value="no5" checked>
+          No
+          </label>
+        </div>
+      </div>
+
+      <div class="question6">
+        Can you read someone elses mind?
+        <div class="radio">
+          <label>
+          <input type="radio" name="mind" value="yes6" checked>
+          Yes
+          </label>
+        </div>
+
+        <div class="radio">
+          <label>
+          <input type="radio" name="mind" value="no6" checked>
+          No
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" id="submitBtn" class="btn btn-info">Tell me who I am!</button>
+    </form>
+  </div>
+
+  <div>
+    <h2>You are <span id="output"></span>!</h2>
+  </div>
+
+</div>
+
+</body>
+</html>
