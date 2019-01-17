@@ -19,3 +19,13 @@ img {
   width:400px;
   height:250px;
 }
+
+#quiz p {
+  font-weight: bold;
+  font-size:18px;
+}
+
+.radio {
+  text-align: left;
+  padding-left: 505px;
+}
