@@ -9,23 +9,49 @@ $(document).ready(function(){
 
 
     if (question1 === "male" && question2 === "yes2" && question3 === "no3" && question4 === "yes4" && question5 === "no5") {
-        $("#output").text(" Drax");
-      } else if (question1 === "male" && question3 === "yes3" && question4 === "yes4" && question5 === "no5"){
-        $("#output").text(" Star Lord");
-      } else if (question1 === "male" && question4 === "no4" && question5 === "no5"){
-        $("#output").text(" Groot");
-      } else if (question1 === "male" && question5 === "yes5"){
-        $("#output").text(" Racoon");
-      } else if (question1 === "female" && question6 === "yes6"){
-        $("#output").text(" Mantis");
-      } else if (question1 === "female"){
-        $("#output").text(" Gamora");
-      } else {
-        $("#output").text(" Yondu");
-      }
-
+      $("#output").text("Drax!");
+      $("p#output").after('<img src="img/drax.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    } else if (question1 === "male" && question3 === "yes3" && question4 === "yes4" && question5 === "no5"){
+      $("#output").text("Star Lord!");
+      $("p#output").after('<img src="img/starlord.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    } else if (question1 === "male" && question4 === "no4"){
+      $("#output").text("Groot!");
+      $("p#output").after('<img src="img/groot.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    } else if (question1 === "male" && question5 === "yes5"){
+      $("#output").text("Raccoon!");
+      $("p#output").after('<img src="img/raccoon.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    } else if (question1 === "female" && question6 === "yes6"){
+      $("#output").text("Mantis!");
+      $("p#output").after('<img src="img/mantis.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    } else if (question1 === "female"){
+      $("#output").text("Gamora!");
+      $("p#output").after('<img src="img/gamora.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    } else {
+      $("#output").text("Yondu!");
+      $("p#output").after('<img src="img/yondu.jpeg"/>')
+      $("#quiz").hide();
+      $("#result").show();
+    }
 
     event.preventDefault();
+  });
+
+  $("#goBack").click(function(){
+    $("#quiz").show();
+    $("#result").hide();
+    location.reload();
   });
 
 });

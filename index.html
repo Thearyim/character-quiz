@@ -5,32 +5,31 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Triangle Tracker</title>
+  <title>Character Quiz</title>
 </head>
 <body>
 
 <div class="container">
-  
+
     <h1 class="header">Character Quiz</h1>
 
-
-  <h2 class="intro">Welcome to this amazing Character Quiz!</h2>
-  <p  class="intro">Here you can see which character fits you the most.</p>
-
   <div id="quiz">
+    <h2 class="intro">Welcome to this amazing Character Quiz!</h2>
+    <p  class="intro">Here you can see which character fits you the most.</p>
+
     <form id="char-quiz">
       <div class="question1">
         Do you prefer male or female?
         <div class="radio">
           <label>
-          <input type="radio" name="gender" value="male" checked>
+          <input type="radio" name="gender" value="male" checked="checked">
           Male
           </label>
         </div>
 
         <div class="radio">
           <label>
-          <input type="radio" name="gender" value="female" checked>
+          <input type="radio" name="gender" value="female">
           Female
           </label>
         </div>
@@ -40,14 +39,14 @@
         Do you like to start a fight?
         <div class="radio">
           <label>
-          <input type="radio" name="fight" value="yes2" checked>
+          <input type="radio" name="fight" value="yes2" checked="checked">
           Yes
           </label>
         </div>
 
         <div class="radio">
           <label>
-          <input type="radio" name="fight" value="no2" checked>
+          <input type="radio" name="fight" value="no2">
           No
           </label>
         </div>
@@ -57,14 +56,14 @@
         Do you like 90's music?
         <div class="radio">
           <label>
-          <input type="radio" name="music" value="yes3" checked>
+          <input type="radio" name="music" value="yes3" checked="checked">
           Yes
           </label>
         </div>
 
         <div class="radio">
           <label>
-          <input type="radio" name="music" value="no3" checked>
+          <input type="radio" name="music" value="no3">
           No
           </label>
         </div>
@@ -74,14 +73,14 @@
         Do you speak more than 3 words?
         <div class="radio">
           <label>
-          <input type="radio" name="speak" value="yes4" checked>
+          <input type="radio" name="speak" value="yes4" checked="checked">
           Yes
           </label>
         </div>
 
         <div class="radio">
           <label>
-          <input type="radio" name="speak" value="no4" checked>
+          <input type="radio" name="speak" value="no4">
           No
           </label>
         </div>
@@ -91,14 +90,14 @@
         Do you like machine gun?
         <div class="radio">
           <label>
-          <input type="radio" name="machinegun" value="yes5" checked>
+          <input type="radio" name="machinegun" value="yes5" checked="checked">
           Yes
           </label>
         </div>
 
         <div class="radio">
           <label>
-          <input type="radio" name="machinegun" value="no5" checked>
+          <input type="radio" name="machinegun" value="no5">
           No
           </label>
         </div>
@@ -108,14 +107,14 @@
         Can you read someone elses mind?
         <div class="radio">
           <label>
-          <input type="radio" name="mind" value="yes6" checked>
+          <input type="radio" name="mind" value="yes6" checked="checked">
           Yes
           </label>
         </div>
 
         <div class="radio">
           <label>
-          <input type="radio" name="mind" value="no6" checked>
+          <input type="radio" name="mind" value="no6">
           No
           </label>
         </div>
@@ -125,8 +124,12 @@
     </form>
   </div>
 
-  <div>
-    <h2>You are <span id="output"></span>!</h2>
+  <div id="result">
+    <h2>You are </h2>
+    <p id="output">
+    </p>
+    <br/><br/>
+    <button type="button" class="btn btn-success" id="goBack">Go Back</buttton>
   </div>
 
 </div>
